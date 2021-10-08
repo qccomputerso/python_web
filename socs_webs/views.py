@@ -8,3 +8,5 @@ def events(request):
     return render(request, 'socs_webs/events.html')
 def contact(request):
     return render(request, 'socs_webs/contact.html')
+def oday(request):
+    return render(request, 'socs_webs/oday.html')
