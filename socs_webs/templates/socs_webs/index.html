@@ -1,0 +1,36 @@
+{% extends "socs_webs/base.html" %}
+
+{% block page_header %}
+  <div class="jumbotron">
+      <h1>Queen's College Society of Computer Studies</h1>  
+
+    <p class="lead">Our goal as the Society of Computer Studies is to provide insight about programming and Computer Science
+        to our schoolmates, and to help them gain a better understanding of the topics, as well as an understanding
+        of the impact of rapid development of IT on our society.</p>  
+    
+    <p class="lead">We conduct programming courses, as well as training for the
+        <a class="invert" href="https://hkoi.org/en/" target="newtab">HKOI</a> (Hong Kong Olympiad in Informatics)
+        to achieve our aims.</p>
+
+    <p>Instagram:&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/qc_socs/" target="newtab" 
+        class="invert">@qc_socs </a>(Please Follow Us!!!)</p>
+    
+    <a class="btn btn-lg btn-primary" href="{% url 'socs_webs:events' %}" role="button">Upcoming Event &raquo;</a>
+  </div>
+  <div class="jumbotron">
+    <h3>Officials List</h3>
+    <h5>Chairman:</h5>
+    <p>Chan Chi Him&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5C(01)</p>
+    <h5>Vice Chairman:</h5>
+    <p>Yip Cheuk Lam&nbsp;&nbsp;&nbsp;&nbsp;5C(34)<br>Chen Kyle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4A(06)<br/></p>
+    <h5>Commitee:</h5>
+    <p>Wu Zi Qi&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3A(30)
+        <br>Fu Sze Ho&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3C(10)<br/>
+        Li Yue Wang&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4B(19)<br>
+        Lam Ching Yiu&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5A(10)<br/>
+        Fung Yik Hei&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4C(07)</p>
+  
+  <a class="btn btn-lg btn-primary" href="{% url 'socs_webs:contact' %}" role="button">Contact Us &raquo;</a>
+  </div>
+{% endblock page_header %}

@@ -1,0 +1,1 @@
+web: gunicorn socs_web.wsgi --log-file -
