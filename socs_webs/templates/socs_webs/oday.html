@@ -1,22 +1,26 @@
 {% extends "socs_webs/base.html" %}
 
 {% block page_header %}
-  <h3>Upcoming Events</h3>
+  <div class="container">
+    <h3 class="text-light">Upcoming Events</h3>
+  </div>
 {% endblock page_header %}
 
 {% block content %}
-  <div class="card mb-3">
-    <h4 class="card-header">Orientation Day (Ended)</h4>
-    <div class="card-body">Time: 15/10 (Fri) 16:00 - 17:00<br>Venue: Google meet<br/><a class="invert" href="https://meet.google.com/vec-ryhf-ztc" target="newtab">Meeting Link</a>
-           (Please join with personal account)<hr/><p><font style="font-family:serif;">Do you know about 
-            randomness?</font></p>
-            <p><font style="font-family:serif;">It sounds very mysterious, but it is one of the things that power your everyday life. 
-            From machine learning to securing online payments, randomness is a very important and thoroughly 
-            studied topic in Computer Science.</font></p>
-            <p><font style="font-family:serif;">SoCS is holding the O’Day on 15/10 (Fri). There will be a talk 
-            about randomness, a quiz with prizes, and some short videos about different aspects of computer 
-            science.</font></p>
-            <a class="btn-lg btn-xs btn-primary" href="{% url 'socs_webs:events' %}" 
-            role="button">&laquo; Back</a></div>
+  <div class="card mb-3 bg-dark text-white">
+    <div class="container">
+      <h4 class="card-header">Orientation Day (Ended)</h4>
+      <div class="card-body">Time: 15/10 (Fri) 16:00 - 17:00<br>Venue: Google meet<br/><a class="invert" href="https://meet.google.com/vec-ryhf-ztc" target="newtab">Meeting Link</a>
+             (Please join with personal account)<hr/><p><font style="font-family:serif;">Do you know about 
+              randomness?</font></p>
+              <p><font style="font-family:serif;">It sounds very mysterious, but it is one of the things that power your everyday life. 
+              From machine learning to securing online payments, randomness is a very important and thoroughly 
+              studied topic in Computer Science.</font></p>
+              <p><font style="font-family:serif;">SoCS is holding the O’Day on 15/10 (Fri). There will be a talk 
+              about randomness, a quiz with prizes, and some short videos about different aspects of computer 
+              science.</font></p>
+              <a class="btn-lg btn-xs btn-primary" href="{% url 'socs_webs:events' %}" 
+              role="button">&laquo; Back</a></div>
+    </div>
   </div>
 {% endblock content %}
