@@ -33,6 +33,8 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'socs_webs',
     'bootstrap4',
+    'django_forms_bootstrap',
+    'bootstrap5',
     
     'django.contrib.admin',
     'django.contrib.auth',
